@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Young+Serif&display=swap');
+
+*{
+    border: 0;
+}
+
+.nav{
+   background-color: green;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    justify-content: space-between;
+    padding-right: 20px;
+    text-align: center;
+}
+a:hover{
+    color: lightgreen;
+}
+
+.home-section{
+    display: flex;
+    padding-top: 10px;
+}
+.home{
+    background-color: lightgreen;
+    border: 1px solid green;
+    text-align: center;
+}
+.home h1{
+    font-family: 'Young Serif', serif;
+    font-style: italic;
+    text-align: center;
+}
+.home h1::after{
+    content: '';
+    background: green;
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 20px auto 50px;
+}
+.home p{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+/* About start */
+.about{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(110deg, white 35%, lightgreen 55%);
+}
+.about img{
+    width: 300px;
+    height: 300px;
+    padding-top: 150px;
+}
+.about h2{
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Young Serif', serif;
+}
+.about h2::after{
+    content: '';
+    background: black;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 20px auto 50px;
+}
+.about p{
+    padding-bottom: 100px;
+}
+/* About end */
+/* Service starts */
+.content-service{
+    background: green;
+    height: 200vh;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.service-container h1{
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Young Serif', serif;
+}
+.service-container h1::after{
+    content: '';
+    background: black;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 50px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.row-service{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+}
+.row-service i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: black;
+}
+.row-service h2{
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Pacifico', cursive;
+}
+.row-service p{
+    font-family: 'Young Serif', serif;
+}
+.row-service:hover{
+    background: black;
+    color: #fff;
+    transform: scale(1.05);
+}
+.row-service:hover i{
+    color: lightgreen;
+}
+/* Service Ends */
+/* Team Begins */
+.team h2{
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    margin-bottom: 30px;
+}
+.team h2::after{
+    content: '';
+    background: green;
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 20px auto 50px;
+}
+.members{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding-bottom: 20px;
+}
+.team-members{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+}
+.team-members img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.team-members h4{
+    text-align: center;
+    font-size: 12px;
+    margin: 7px;
+    font-family: 'Pacifico', cursive;
+    color: lightgreen;
+}
+.team-members p{
+    text-align: center;
+    font-size: 12px;
+    margin: 7px;
+    font-family: 'Pacifico', cursive;
+    color: lightgreen;
+}
+.team-members:hover{
+    background: green;
+    color: black;
+    transform: scale(1.05);
+    border-radius: 25%;
+}
+.team-members:hover h4{
+    color: black;
+    height: 2px;
+}
+.team-members:hover p{
+    color: black;
+}
+/* Team Ends */
+/* Reviews Start */
+.reviews{
+    background: linear-gradient(110deg, white 25%, green 45%);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    grid-template: repeat(2,1fr);
+    gap: 10rem;
+}
+.review-container1 h1{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: green;
+    font-family: 'Young Serif', serif;
+}
+
+.review-container1 p{
+    margin-bottom: 1rem;
+    color: black;
+    font-family: 'Pacifico', cursive;
+}
+.review-container1 button{
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, green lightgreen);
+    color: green;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.review-container2{
+    display: grid;
+    gap: 2rem;
+}
+.card-reviews{
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: lightgreen;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    height: 150px;
+    width: 500px;
+}
+.card-reviews img{
+    max-width: 75px;
+    border-radius: 100%;
+}
+.card-reviews-content span i{
+    font-size: 2rem;
+    color: #fff;
+}
+.card-reviews-details p{
+    font-style: italic;
+    color: black;
+    margin-bottom: 1rem;
+    font-family: 'Pacifico', cursive;
+}
+.card-reviews-details h4{
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Young Serif', serif;
+}
+/* Reviews End */
